@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41AC690180FC8F600403766 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AC68F180FC8F600403766 /* FacebookSDK.framework */; };
 		A4BAC6C5180EB45700CBCFD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BAC6C4180EB45700CBCFD2 /* UIKit.framework */; };
 		A4BAC6C7180EB45700CBCFD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BAC6C6180EB45700CBCFD2 /* Foundation.framework */; };
 		A4BAC6C9180EB45700CBCFD2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BAC6C8180EB45700CBCFD2 /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A41AC68F180FC8F600403766 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		A4BAC6C0180EB45700CBCFD2 /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4BAC6C4180EB45700CBCFD2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A4BAC6C6180EB45700CBCFD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,6 +49,7 @@
 				A4BAC6C5180EB45700CBCFD2 /* UIKit.framework in Frameworks */,
 				A4BAC6C7180EB45700CBCFD2 /* Foundation.framework in Frameworks */,
 				A4BAC6C9180EB45700CBCFD2 /* CoreGraphics.framework in Frameworks */,
+				A41AC690180FC8F600403766 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +76,7 @@
 		A4BAC6C3180EB45700CBCFD2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A41AC68F180FC8F600403766 /* FacebookSDK.framework */,
 				A4BAC6C4180EB45700CBCFD2 /* UIKit.framework */,
 				A4BAC6C6180EB45700CBCFD2 /* Foundation.framework */,
 				A4BAC6C8180EB45700CBCFD2 /* CoreGraphics.framework */,
@@ -255,6 +259,10 @@
 		A4BAC6E5180EB45700CBCFD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyApp/MyApp-Prefix.pch";
 				INFOPLIST_FILE = "MyApp/MyApp-Info.plist";
@@ -266,6 +274,10 @@
 		A4BAC6E6180EB45700CBCFD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyApp/MyApp-Prefix.pch";
 				INFOPLIST_FILE = "MyApp/MyApp-Info.plist";
@@ -293,6 +305,7 @@
 				A4BAC6E6180EB45700CBCFD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -30,6 +30,23 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>FacebookAppID</key>
+	<string>535305503204641</string>
+	<key>FacebookDisplayName</key>
+	<string>MyApp</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb535305503204641</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
